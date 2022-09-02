@@ -74,19 +74,21 @@ header {
   width: 12%;
 }
 .button {
-  background: none;
+  background: var(--light-color);
   border: 1px solid var(--light-color);
-  color: var(--light-color);
+  color: var(--primary-color);
+  font-weight: 600;
   border-radius: 5px;
   font-size: 1rem;
   padding: 0.3rem 1rem 0.3rem 1rem;
 }
 
 /* Main */
-main {
-  width: 100vw;
+.home {
+  width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: row;
 }
 .box {
   width: 50%;
@@ -120,4 +122,15 @@ main {
 }
 .box > .img-wrapper > img {
   width: 70%;
+}
+
+/* Carousel */
+.icon-slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  width: 100px;
 }
